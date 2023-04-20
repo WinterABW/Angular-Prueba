@@ -1,0 +1,45 @@
+<div [ngClass]="{'bg-dark text-white':fondo==='' ,'fondo1':fondo==='fondo1', 'fondo2':fondo==='fondo2'}">
+    <div class="buton container">
+        <button class="btn btn-primary" (click)="show=true" *ngIf="showBtn" (click)="showBtn=!showBtn">Mostrar</button>
+        <button class="btn btn-danger" (click)="show=false" *ngIf="!showBtn" (click)="showBtn=!showBtn">Ocultar</button>
+        <button class="btn btn-secondary" (click)="fondo='fondo2'">Tema 1</button>
+        <button class="btn btn-dark" (click)="fondo='fondo1'">Tema 2</button>
+    </div>
+
+
+    <div *ngIf="show">
+        <p>
+            ¡Descubre nuevos destinos y vive experiencias únicas con nuestra startup de turismo! Ofrecemos un amplio
+            catálogo de opciones para que puedas planificar tu viaje perfecto. Desde playas exóticas hasta aventuras en
+            la montaña, te ayudamos a crear recuerdos inolvidables. ¡Únete a nuestra comunidad viajera hoy mismo
+        </p>
+        <p>
+            ¿Quieres vivir una experiencia única en tus próximas vacaciones? ¡Tenemos el servicio de viajes perfecto
+            para ti! Ofrecemos paquetes turísticos personalizados, adaptados a tus gustos y presupuesto. Desde playas
+            paradisíacas hasta ciudades históricas, tenemos destinos para todos los gustos. Además, contamos con un
+            equipo de profesionales que te acompañará durante todo el viaje para asegurarte una experiencia inolvidable.
+            ¡No esperes más y reserva tu próximo viaje con nosotros!</p>
+    </div>
+    <div class="container ">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">Boletos</th>
+                    <th scope="col">Dias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let viaje of viajes; index as i">
+                    <th scope="row">{{i}}</th>
+                    <td>{{viaje.precio}}</td>
+                    <td>{{viaje.ciudad}}</td>
+                    <td>{{viaje.disp}}</td>
+                    <td>{{viaje.dias}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

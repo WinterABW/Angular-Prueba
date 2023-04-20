@@ -1,0 +1,22 @@
+.fondo1 {
+    background-color: #111b21;
+    color: aliceblue;
+    font-family: 'Bell MT', Times, serif;
+}
+
+.fondo2 {
+    background-color: #202c33;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buton {
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    margin: auto 1rem;
+}
+th,td{
+    color:#fff;
+}

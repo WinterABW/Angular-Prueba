@@ -1,0 +1,17 @@
+.bgi {
+    background-image: url(9ba2e5dbe5fbca88da66dc617cd862d1.jpg);
+    border-radius: 10px;
+}
+
+.glass {
+    
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.1px);
+
+}

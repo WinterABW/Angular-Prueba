@@ -1,0 +1,7 @@
+<ul class="list-group">
+    <li class="list-group-item bg-dark text-white" *ngFor="let item of equipo, index as i">
+        <h6>Nombre: {{item.name}}</h6>
+        <h6>Especialidad: {{item.especilidad}}</h6>
+        <a [routerLink]="['/equipo', i]" class="text-primary" style="text-decoration: none;">Leer más...</a>
+    </li>
+</ul>
